@@ -1,0 +1,30 @@
+$fondos: (
+    fondo-principal: radial-gradient(circle,  #a0428b, #55aa55),
+    fondo-nav-bar: linear-gradient(to bottom, #a0428b, #55aa55),
+    fondo-secundario: radial-gradient( ellipse at top, #a0428b, #3c4336),
+    fondo-alternativo: radial-gradient( ellipse at bottom, #a0428b, #55aa55),
+    fondo-footer: linear-gradient(to top, #a0428b, #3c4336),
+);
+$scroll: (
+    scroll-bar: #76df76,
+    scroll-back: #646060,
+);
+$anchor-color: (
+    link: #55aa55,
+    link-hover: #76df76,
+    link-hover-fondo: #495042,
+    link-visited: #8d5a89,
+);
+
+$font-colors: (
+   color-one: #ced3d8,
+   color-two: #000000,
+   color-title: #ced3d8,
+   color-content: #36022b,
+);
+$border-colors: (
+    border-nav: solid rgb(80, 158, 80),
+    border-title: solid #ced3d8, 
+    border-box: solid #3f552c,
+    border-box-two: solid #550844,
+);

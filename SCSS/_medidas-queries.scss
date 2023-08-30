@@ -1,0 +1,14 @@
+/*QUERIES DESKTOP*/
+
+/*INDEX*/
+@mixin desktop-scroll {
+    @media screen and (min-width: 1200px ) {
+        @content;
+    }
+}
+@mixin desktop-section {
+    @media screen and (min-width: 1200px ) {
+        @content;
+    }
+}
+
