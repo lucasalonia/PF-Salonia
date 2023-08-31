@@ -44,6 +44,7 @@ body.body {
 header.header {
     position: sticky;
     top: 0%;
+    z-index: 2;
 }
 
 img.navbar__logo {
@@ -1125,5 +1126,12 @@ section.thc {
         }
     }
     
+}
+.contacto {
+    font-family:'Oswald', sans-serif;
+    background-image: map-get($fondos, fondo-alternativo-two);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
 }
 

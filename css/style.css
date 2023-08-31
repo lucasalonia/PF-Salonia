@@ -37,6 +37,7 @@ body.body.scroll::-webkit-scrollbar-thumb {
 header.header {
   position: sticky;
   top: 0%;
+  z-index: 2;
 }
 
 img.navbar__logo {
@@ -1057,6 +1058,14 @@ section.thc.thc div.thc__descripcion.thc__descripcion a.thc__descripcion-anchor:
   padding: 2px;
   background-color: #495042;
   color: rgb(118, 223, 118);
+}
+
+.contacto {
+  font-family: "Oswald", sans-serif;
+  background-image: linear-gradient(to bottom, #a0428b, #3c4336);
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
