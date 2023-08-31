@@ -67,9 +67,10 @@
     </header>
     <main>
         <section class="contacto" >
-            <div>
-                <h3>Para contactarnos:</h3>
-                    <p></p>
+            <div class="contacto__nosotros">
+                <h3 class="contacto__nosotros-titulo">Encontranos en:</h3>
+                    <p class="contacto__nosotros-telefono"><img class="contacto__nosotros-telefono-imagen" src="imagenes/iconos/telefono-icono.xml">2665898169</p>
+                    <p class="contacto__nosotros-ubicacion" ><img class="contacto__nosotros-ubicacion-imagen" src="imagenes/iconos/ubicacion-icono.xml">Av. San Martin 666</p>
             </div>
             <div class="container">
                 <div class="row">
@@ -82,16 +83,16 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label for="form_name">Nombre *</label>
-                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required"
+                                            <label for="form_name">Nombre</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Escribir Nombre" required="required"
                                                 data-error="Firstname is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label for="form_lastname">Apellido *</label>
-                                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required"
+                                            <label for="form_lastname">Apellido</label>
+                                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Escribrir Apellido" required="required"
                                                 data-error="Lastname is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -100,8 +101,8 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label for="form_email">Email *</label>
-                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
+                                            <label for="form_email">Email</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Escribir Email" required="required"
                                                 data-error="Valid email is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -109,27 +110,25 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="form_phone">Telefono</label>
-                                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Numero de celular">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="form_message">Mensaje *</label>
-                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"
+                                    <label for="form_message">Mensaje </label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Escriba el mensaje que desea enviarnos" rows="4" required="required"
                                         data-error="Please, leave us a message."></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
-        
-        
+
                                 <div class="form-group">
                                     <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
                                     <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
                                     <div class="help-block with-errors"></div>
                                 </div>
         
-        
-                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                <input class="boton-custom" type="submit" class="btn btn-success btn-send" value="Enviar">
         
                             </div>
                         </form>

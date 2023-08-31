@@ -1127,11 +1127,72 @@ section.thc {
     }
     
 }
-.contacto {
+/*END SECTION THC*/
+/*END PAGINA SEMILLAS*/
+
+
+
+/*PAGINA CONTACTO*/
+/*SECTION Contacto*/
+section.contacto {
     font-family:'Oswald', sans-serif;
     background-image: map-get($fondos, fondo-alternativo-two);
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    @include desktop-section {
+     display: flex;
+     flex-direction: row;       
+    }
+    
+    &.contacto div.contacto__nosotros {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        @include desktop-section {
+            width: 50%;
+        }
 
+
+        h3.contacto__nosotros-titulo {
+            font-size: 200%;
+            margin-bottom: 20px;
+        }
+        p.contacto__nosotros-telefono {
+            font-size: 180%;
+            text-align: center;
+
+            img.contacto__nosotros-telefono-imagen {
+                width: 15%;
+                margin-right: 20px;
+            }
+        }
+        p.contacto__nosotros-ubicacion {
+            font-size: 180%;
+            text-align: center;
+            margin-left: 50px;
+            img.contacto__nosotros-ubicacion-imagen {
+                width: 15%;
+                margin-right: 20px;
+                
+            }
+        }
+    
+    }
+    input.boton-custom {
+        background-image: map-get($fondos, fondo-alternativo);
+        background-color: aqua;
+    }
+}
+input.boton-custom {
+    background-image: map-get($fondos, fondo-alternativo);
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
