@@ -7,15 +7,23 @@
     margin: 0px;
 }
 @font-face {
-    font-family:'Oswald', sans-serif;
-    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+    font-family: 'Oswald', sans-serif;
+    src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf');
+    src: url('../fonts/Oswald/static/Oswald-Bold.ttf');
+    src: url('../fonts/Oswald/static/Oswald-ExtraLight.ttf');
+    src: url('../fonts/Oswald/static/Oswald-Light.ttf');
+    src: url('../fonts/Oswald/static/Oswald-Medium.ttf');
+    src: url('../fonts/Oswald/static/Oswald-Regular.ttf');
+    src: url('../fonts/Oswald/static/Oswald-SemiBold.ttf');
 }
+
+
 
 
 /*BODY*/
 
 body.body {
-    font-family:'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-image: map-get($fondos, fondo-principal );
     
     &.scroll::-webkit-scrollbar {
