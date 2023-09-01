@@ -2,15 +2,22 @@
 
 /*INDEX*/
 @mixin desktop-scroll {
-    @media screen and (min-width: 1200px ) {
+    @media screen and (min-width: 900px ) {
         @content;
     }
 }
 @mixin desktop-section {
-    @media screen and (min-width: 1200px ) {
+    @media screen and (min-width: 900px ) {
         @content;
     }
 }
+@mixin desktop-section-tablet-adaptation {
+    @media screen and (min-width: 900px ) and (max-width: 1200px ) {
+        @content;
+    }
+}
+
+
 @mixin desktop-section-1920 {
     @media screen and (min-width: 1900px ) {
         @content;

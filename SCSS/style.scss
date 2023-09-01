@@ -119,6 +119,11 @@ main section.promociones {
     @include desktop-section-1920 {
         height: 1800px;
     }
+    @include desktop-section-tablet-adaptation {
+        display: flex;
+        width: 65%;
+        margin-left: 200px;
+    } 
 
       h1.promociones__titulo {
         color: map-get($font-colors, color-title);
@@ -154,6 +159,10 @@ main section.promociones {
                 margin-top: 70px;
                 background-color: map-get($fondos, fondo-secundario );
                 color:map-get($font-colors, color-one);
+
+                @include desktop-section-tablet-adaptation {
+                    width: 60%;
+                } 
 
              }
 
@@ -193,6 +202,9 @@ main section.promociones {
             background-color: map-get($fondos, fondo-secundario );
             color: map-get($font-colors, color-one);
         }
+        @include desktop-section-tablet-adaptation {
+            width: 60%;
+        } 
 
         img.promociones__kit-two-imagen {
             border: map-get($border-colors, border-box);
@@ -235,6 +247,10 @@ main section.promociones {
                 font-size: 23px
                 
             }
+            @include desktop-section-tablet-adaptation {
+                visibility: hidden;
+                display: none;
+            } 
             @include desktop-section-1920 {
                 font-size: 1800px;
                 p.promociones__kit-one-desktop-parrafo{  
@@ -269,6 +285,10 @@ main section.promociones {
             }
 
        } 
+       @include desktop-section-tablet-adaptation {
+        visibility: hidden;
+        display: none;
+    } 
        @include desktop-section-1920 {
         font-size: 1800px;
         p.promociones__kit-two-desktop-parrafo{  
@@ -571,6 +591,9 @@ section.enlace {
             @include desktop-section-1920 {
                 height: 450px;
             }
+            @include desktop-section-tablet-adaptation {
+                width: 120%;
+            } 
         }
         
     }
@@ -608,6 +631,9 @@ section.enlace {
             height: 280px;
             font-size: 29px;
         }
+        @include desktop-section-tablet-adaptation {
+            width: 80%;
+        } 
     }
 
 }
