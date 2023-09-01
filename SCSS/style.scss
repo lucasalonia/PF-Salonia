@@ -68,6 +68,14 @@ header nav.navbar {
     border-bottom: map-get($border-colors, border-nav );
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+
+    @include desktop-section-1920 {
+        font-size: 25px;
+        
+        .busqueda-custom {
+            width: 400px;
+        }
+    }
 }
 div.drop-down-custom {
     background-image:  map-get($fondos, fondo-secundario );
@@ -108,7 +116,9 @@ main section.promociones {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px 2fr 2fr;
     }
-
+    @include desktop-section-1920 {
+        height: 1800px;
+    }
 
       h1.promociones__titulo {
         color: map-get($font-colors, color-title);
@@ -208,7 +218,7 @@ main section.promociones {
         width: 0px;
         height: 0px;
 
-        @include desktop-section {
+        @include desktop-section  {
             visibility: visible;
             background-color: map-get($fondos, fondo-one );
             border-radius: 10px;
@@ -219,11 +229,20 @@ main section.promociones {
             grid-area: descripcion-uno;
             align-self: start;
 
+          
             p.promociones__kit-one-desktop-parrafo{
                 color: map-get($font-colors, color-one);
                 font-size: 23px
-        
+                
             }
+            @include desktop-section-1920 {
+                font-size: 1800px;
+                p.promociones__kit-one-desktop-parrafo{  
+                    font-size: 35px
+                    
+                }
+            }
+
         }
 
         
@@ -249,7 +268,14 @@ main section.promociones {
                 font-size: 23px
             }
 
-       }   
+       } 
+       @include desktop-section-1920 {
+        font-size: 1800px;
+        p.promociones__kit-two-desktop-parrafo{  
+            font-size: 35px
+            
+        }
+    }  
     
     }
 }
@@ -283,6 +309,10 @@ main section.descuentos {
         flex-direction: column;
         flex-wrap: wrap;
     }
+    @include desktop-section-1920 {
+        height: 280px;
+    }
+
 
     &.descuentos div.descuentos__reprocann {
         text-align: center;
@@ -538,6 +568,9 @@ section.enlace {
                 width: 560px; 
                 height: 400px;
             }
+            @include desktop-section-1920 {
+                height: 450px;
+            }
         }
         
     }
@@ -551,6 +584,9 @@ section.enlace {
             font-size: 20px;
             border-radius: 10px;
             padding: 5px;
+        }
+        @include desktop-section-1920 {
+            font-size: 50px;
         }
        
     }
@@ -567,6 +603,10 @@ section.enlace {
             grid-area: parrafo;
             padding: 10px;
             font-size: 20px;
+        }
+        @include desktop-section-1920 {
+            height: 280px;
+            font-size: 29px;
         }
     }
 
