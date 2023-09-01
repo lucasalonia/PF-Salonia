@@ -7,10 +7,11 @@
 
 @font-face {
   font-family: "Oswald", sans-serif;
-  src: url("./fonts/Oswald-VariableFont_wght.ttf");
+  src: url("../fonts/Oswald-VariableFont_wght.ttf");
 }
 /*BODY*/
 body.body {
+  font-family: "Oswald", sans-serif;
   background-image: radial-gradient(circle, #a0428b, #55aa55);
 }
 body.body.scroll::-webkit-scrollbar {
