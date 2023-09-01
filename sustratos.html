@@ -1,31 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustratos</title>
-    <link rel="Short Cut Icon" href="imagenes/favicon/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shor cut icon" href="imagenes/favicon/favicon.png"/>
+  <title>Sustratos</title>
 </head>
-<body>
+<body class="body scroll">
     <header class="header">
-        <img src="imagenes/logo/lagranjah logo.jpg" width="200.px" />
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+            <a class="navbar-brand" href="index.html">
+              <img class="navbar__logo" src="imagenes/logo/lagranjah_logo-removebg-preview (1).png" alt="logo la granja">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle anchor-color" href="fertilizantes.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Fertilizantes
+                    </a>
+                    <div class="dropdown-menu drop-down-custom" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item anchor-custom" href="fertilizantes.html">Fertilizantes</a>
+                      
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="sustratos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sustratos
+                  </a>
+                  <div class="dropdown-menu drop-down-custom" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item anchor-custom" href="sustratos.html">Sustratos</a>
+                   
+                  </div>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="semillas.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Semillas
+                    </a>
+                    <div class="dropdown-menu drop-down-custom" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item anchor-custom" href="semillas.html">cbd y thc</a>
+                      
+                    </div>
+                   <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Productos
+                        </a>
+                        <div class="dropdown-menu drop-down-custom" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item anchor-custom" href="productos.html">Productos</a>
+                          
+                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link anchor-color" href="contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link anchor-color" href="index.html">Inicio</a>
+                      </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="imagenes/iconos/lupa-icon.png" width="30px"></button>
+              </form>
+            </div>
+          </nav>
     </header>
-    <nav>
-        <a href="fertilizantes.html">Fertilizantes</a>
-        <a href="sustratos.html">Sustratos</a>
-        <a href="semillas.html">Semillas</a>
-        <a href="productos.html">Productos</a>
-        <a href="index.html">Inicio</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-    <ul>
-        <li>Fertilizantes</li>
-        <li><b>Sustratos</b></li>
-        <li>Semillas</li>
-        <li>Productos</li>
-        <li>Contacto</li>
-    </ul>
-    <h1>Sustratos</h1>
-    
+    <main>
+      <section class="productos">
+        <div class="productos__filtros">
+          <h3 class="productos__filtros-titulo">Filtros</h3>
+          <div class="productos__filtros-search navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input class="input-custom form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Busqueda">
+              <button class="btn-custom btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+          </div>
+          <div class="productos__filtros-custom">
+              <div class="productos__filtros-custom-general form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Color
+                </label>
+              </div>
+              <div class="productos__filtros-custom-general form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Diseño
+                </label>
+              </div>
+              <div class="productos__filtros-custom-general form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Marca
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  OCB Exclusivo
+                </label>
+              </div>
+              <div class="productos__filtros-custom-general form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Lupas
+                </label>
+              </div>
+          </div>
+        </div>
+          <h3 class="prodcutos__parafernalia-titulo">Sustratos</h3>
+          <div class="prodcutos__parafernalia-one prodcutos__parafernalia-contenedor sustrato-general">
+            <img class="prodcutos__parafernalia-one-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/cultivate.png">
+            <p class="prodcutos__parafernalia-one-parrafo productos__parrafos">Cultivate $12000</p>
+          </div>
+          <div class="prodcutos__parafernalia-two prodcutos__parafernalia-contenedor sustrato-general">
+            <img class="prodcutos__parafernalia-two-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/cultivateindoor.png">
+            <p class="prodcutos__parafernalia-two-parrafo productos__parrafos">Cultivate Indoor $13500</p>
+          </div>
+          <div class="prodcutos__parafernalia-three prodcutos__parafernalia-contenedor sustrato-general">
+            <img class="prodcutos__parafernalia-three-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/Growers.png">
+            <p class="prodcutos__parafernalia-three-parrafo productos__parrafos">Growerse $8200</p>
+          </div>
+          <div class="prodcutos__parafernalia-four prodcutos__parafernalia-contenedor sustrato-general"">
+            <img class="prodcutos__parafernalia-four-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/gronwmix-2.png">
+            <p class="prodcutos__parafernalia-four-parrafo productos__parrafos">Grow Mix indor $9000</p>
+          </div>
+          <div class="prodcutos__parafernalia-five prodcutos__parafernalia-contenedor sustrato-general"">
+            <img class="prodcutos__parafernalia-five-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/grownmix.png">
+            <p class="prodcutos__parafernalia-five-parrafo productos__parrafos">Grow Mix $8200</p>
+          </div>
+          <div class="prodcutos__parafernalia-six prodcutos__parafernalia-contenedor sustrato-general"">
+            <img class="prodcutos__parafernalia-six-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/JuaniJuana.png">
+            <p class="prodcutos__parafernalia-six-parrafo productos__parrafos">Juani Juana (importado) $32000 </p>
+          </div>
+          <div class="prodcutos__parafernalia-seven prodcutos__parafernalia-contenedor sustrato-general"">
+            <img class="prodcutos__parafernalia-seven-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/Terrafertil.png">
+            <p class="prodcutos__parafernalia-seven-parrafo productos__parrafos">Terrafertil $11000</p>
+          </div>
+          <div class="prodcutos__parafernalia-eight prodcutos__parafernalia-contenedor sustrato-general"">
+            <img class="prodcutos__parafernalia-eight-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/Landiner.png">
+            <p class="prodcutos__parafernalia-eight-parrafo productos__parrafos">Landiner $9600</p>
+          </div>
+          <div class="prodcutos__parafernalia-nine prodcutos__parafernalia-contenedor sustrato-general"">
+            <img class="prodcutos__parafernalia-nine-imagen prodcutos__imagenes imagen_sustrato" src="imagenes/sustratos/nuebeverde.png "">
+            <p class="prodcutos__parafernalia-nine-parrafo productos__parrafos">Nube Verde $15000</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__contacto">
+          <h3 class="footer__contacto-titulo">Contacto:</h3>
+            <p class="footer__contacto-parrafos">2660000000 "numero ficticio"</p>
+            <p class="footer__contacto-parrafos">cuentagmail@gmail.com</p>
+            <p class="footer__contacto-parrafos">Localizacion: direccion 555</p>
+        </div>
+        <div class="footer__navegacion">
+          <h3 class="footer__navegacion-titulo">Navegacion</h3>
+            <a class="footer__navegacion-anchor" href="fertilizantes.html">Fertilizantes</a>
+            <a class="footer__navegacion-anchor" href="sustratos.html">Sustratos</a>
+            <a class="footer__navegacion-anchor" href="semillas.html">Semillas</a>
+            <a class="footer__navegacion-anchor" href="productos.html">Productos</a>
+            <a class="footer__navegacion-anchor" href="index.html">Inicio</a>
+            <a class="footer__navegacion-anchor" href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer__redes">
+          <h3 class="footer__redes-titulo">Seguinos en:</h3>
+          <a href="https://www.instagram.com/la_granjah_/">
+            <img class="footer__redes-imagen" src="imagenes/intsalogo-removebg-preview.png">
+          </a>
+          <a class="anchorfooter" href="https://www.facebook.com/profile.php?id=100094069643990" alt="instagram lagranja">
+            <img class="footer__redes-imagen" src="imagenes/facebooklogo.png" alt="facebook la granja">
+          </a>
+        </div>
+        <div class="footer__right">
+          <p>La Granja 2023 Copyright © Todos los derechos reservados</p>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
 </body>
 </html>

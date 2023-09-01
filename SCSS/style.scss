@@ -1196,3 +1196,170 @@ input.boton-custom {
     height: 50px;
     border-radius: 5px;
 }
+/*END SECTION Contacto*/
+/*END PAGINA CONTACTO*/
+
+/*PAGINA PRODUCTOS*/
+/*SECTION Productos*/
+section.productos {
+    font-family:'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+   
+    @include desktop-section {
+        display: grid;
+        grid-template-areas: 
+        "filtro titulo titulo titulo"
+        "filtro product-1 product-2 product-3 "
+        "filtro product-4 product-5 product-6"
+        "filtro product-7 product-8 product-9"
+        ;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+
+    div.productos__filtros {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        @include desktop-section {
+            grid-area: filtro;
+            border-right: map-get($border-colors, border-nav );
+            border-radius: 5px;
+            height: 500px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+       h3.productos__filtros-titulo {
+        padding-top: 30px;
+        text-align: center;
+        justify-content: center;
+        }
+        div.productos__filtros-search {
+            justify-content: center;
+            width: 100%;
+            height: 80px;
+            border-radius: 20px;
+            background-image: map-get($fondos, fondo-principal);
+            margin-bottom: 20px;
+            @include desktop-section {
+                height: 150px;
+            }
+
+            input.input-custom {
+                border-radius: 100px;
+                height: 30px;
+                @include desktop-section {
+                    height: 40px;
+                }
+            }
+            button.btn-custom {
+                color: black;
+                font-size: 12px;
+                text-transform: uppercase;
+                border-radius: 100px;
+                height: 30px;
+                background-image: map-get($fondos, fondo-secundario);
+
+                @include desktop-section {
+                    height: 40px;
+                }
+            }
+        }
+        div.productos__filtros-custom {
+            visibility: hidden;
+            display: none;
+            @include desktop-section {
+                visibility: visible;
+                display: block;
+                text-transform: uppercase;
+                font-size: 20px;
+
+                div.productos__filtros-custom-general{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+    }
+
+/*Configuracion general de imagenes y parrafos seccion productos*/
+
+
+        h3.prodcutos__parafernalia-titulo{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: map-get($font-colors, color-content);
+
+        @include desktop-section {
+            grid-area: titulo;
+            
+            }
+        }
+        @include desktop-section {
+
+            div.prodcutos__parafernalia-one {
+                grid-area: product-1;
+            }
+            div.prodcutos__parafernalia-two {
+                grid-area: product-2;
+            }
+            div.prodcutos__parafernalia-three {
+                grid-area: product-3;
+            }
+            div.prodcutos__parafernalia-four {
+                grid-area: product-4;
+            }
+            div.prodcutos__parafernalia-five {
+                grid-area: product-5;
+            }
+            div.prodcutos__parafernalia-six {
+                grid-area: product-6;
+            }
+            div.prodcutos__parafernalia-seven {
+                grid-area: product-7;
+            }
+            div.prodcutos__parafernalia-eight {
+                grid-area: product-8;
+            }
+            div.prodcutos__parafernalia-nine {
+                grid-area: product-9;
+            }
+        }
+
+        div.prodcutos__parafernalia-contenedor {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: map-get($border-colors, border-box-two );
+            border-radius: 5px;
+
+            img.prodcutos__imagenes {
+                width: 80%;
+                border-radius: 10px ;
+            }
+
+            p.productos__parrafos {
+                text-transform: uppercase;
+                font-size: 25px;
+            }
+ /*Fin Configuracion general de imagenes y parrafos seccion productos*/
+        }
+    }
+    .imagen_sustrato {
+        width: 50%;
+        height: 70%;
+    }
+    @include desktop-section {
+    .sustrato-general{
+        height: 90%;
+
+        }
+    }

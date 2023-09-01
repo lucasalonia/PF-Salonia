@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="stylesheet" href="style-page-productos.css">
-    <link rel="shor cut icon" href="imagenes/favicon/favicon.png"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shor cut icon" href="imagenes/favicon/favicon.png"/>
+  <title>Productos</title>
 </head>
-<body>
+<body class="body scroll">
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
             <a class="navbar-brand" href="index.html">
@@ -26,14 +26,14 @@
                     </a>
                     <div class="dropdown-menu drop-down-custom" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item anchor-custom" href="fertilizantes.html">Fertilizantes</a>
-                      <a class="dropdown-item anchor-custom" href="#">Another action</a>
+                      
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="sustratos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sustratos
                   </a>
                   <div class="dropdown-menu drop-down-custom" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item anchor-custom" href="#">Action</a>
-                    <a class="dropdown-item anchor-custom" href="#">Another action</a>
+                    <a class="dropdown-item anchor-custom" href="sustratos.html">Sustratos</a>
+                   
                   </div>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="semillas.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,7 +41,7 @@
                     </a>
                     <div class="dropdown-menu drop-down-custom" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item anchor-custom" href="semillas.html">cbd y thc</a>
-                      <a class="dropdown-item anchor-custom" href="#">Another action</a>
+                      
                     </div>
                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,7 +49,7 @@
                         </a>
                         <div class="dropdown-menu drop-down-custom" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item anchor-custom" href="productos.html">Productos</a>
-                          <a class="dropdown-item anchor-custom" href="#">Another action</a>
+                          
                         </div>
                     <li class="nav-item">
                         <a class="nav-link anchor-color" href="contacto.html">Contacto</a>
@@ -65,21 +65,104 @@
             </div>
           </nav>
     </header>
+    <main>
+      <section class="productos">
+        <div class="productos__filtros">
+          <h3 class="productos__filtros-titulo">Filtros</h3>
+          <div class="productos__filtros-search navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input class="input-custom form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Busqueda">
+              <button class="btn-custom btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+          </div>
+          <div class="productos__filtros-custom">
+              <div class="productos__filtros-custom-general form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Color
+                </label>
+              </div>
+              <div class="productos__filtros-custom-general form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Diseño
+                </label>
+              </div>
+              <div class="productos__filtros-custom-general form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Marca
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  OCB Exclusivo
+                </label>
+              </div>
+              <div class="productos__filtros-custom-general form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Lupas
+                </label>
+              </div>
+          </div>
+        </div>
+          <h3 class="prodcutos__parafernalia-titulo">Parafernalia</h3>
+          <div class="prodcutos__parafernalia-one prodcutos__parafernalia-contenedor">
+            <img class="prodcutos__parafernalia-one-imagen prodcutos__imagenes" src="imagenes/productos/revertidorsts.png">
+            <p class="prodcutos__parafernalia-one-parrafo productos__parrafos">Revertidor STS $2500</p>
+          </div>
+          <div class="prodcutos__parafernalia-two prodcutos__parafernalia-contenedor"">
+            <img class="prodcutos__parafernalia-two-imagen prodcutos__imagenes" src="imagenes/productos/lupa.png">
+            <p class="prodcutos__parafernalia-two-parrafo productos__parrafos">Lupa $5000</p>
+          </div>
+          <div class="prodcutos__parafernalia-three prodcutos__parafernalia-contenedor"">
+            <img class="prodcutos__parafernalia-three-imagen prodcutos__imagenes" src="imagenes/productos/pasa-cicatrizante.png">
+            <p class="prodcutos__parafernalia-three-parrafo productos__parrafos">Pasta Cicatrizante $3200</p>
+          </div>
+          <div class="prodcutos__parafernalia-four prodcutos__parafernalia-contenedor"">
+            <img class="prodcutos__parafernalia-four-imagen prodcutos__imagenes" src="imagenes/productos/tijeras.png">
+            <p class="prodcutos__parafernalia-four-parrafo productos__parrafos">Tijeras pack triple $7000</p>
+          </div>
+          <div class="prodcutos__parafernalia-five prodcutos__parafernalia-contenedor"">
+            <img class="prodcutos__parafernalia-five-imagen prodcutos__imagenes" src="imagenes/productos/micorriza.png">
+            <p class="prodcutos__parafernalia-five-parrafo productos__parrafos">Micorriza/u 7$00</p>
+          </div>
+          <div class="prodcutos__parafernalia-six prodcutos__parafernalia-contenedor"">
+            <img class="prodcutos__parafernalia-six-imagen prodcutos__imagenes" src="imagenes/productos/blunt.png">
+            <p class="prodcutos__parafernalia-six-parrafo productos__parrafos">Blunts/u $500</p>
+          </div>
+          <div class="prodcutos__parafernalia-seven prodcutos__parafernalia-contenedor"">
+            <img class="prodcutos__parafernalia-seven-imagen prodcutos__imagenes" src="imagenes/productos/minibong.png">
+            <p class="prodcutos__parafernalia-seven-parrafo productos__parrafos">Minibong/u $8000</p>
+          </div>
+          <div class="prodcutos__parafernalia-eight prodcutos__parafernalia-contenedor"">
+            <img class="prodcutos__parafernalia-eight-imagen prodcutos__imagenes" src="imagenes/productos/bandeja-1.png">
+            <p class="prodcutos__parafernalia-eight-parrafo productos__parrafos">Bandeja OCB $850</p>
+          </div>
+          <div class="prodcutos__parafernalia-nine prodcutos__parafernalia-contenedor"">
+            <img class="prodcutos__parafernalia-nine-imagen prodcutos__imagenes" src="imagenes/productos/filtros.png "">
+            <p class="prodcutos__parafernalia-nine-parrafo productos__parrafos">Filtros/u 120$</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
         <div class="footer__contacto">
           <h3 class="footer__contacto-titulo">Contacto:</h3>
-          <p class="footer__contacto-parrafos">2660000000 "numero ficticio"</p>
-          <p class="footer__contacto-parrafos">cuentagmail@gmail.com</p>
-          <p class="footer__contacto-parrafos">Localizacion: direccion 555</p>
+            <p class="footer__contacto-parrafos">2660000000 "numero ficticio"</p>
+            <p class="footer__contacto-parrafos">cuentagmail@gmail.com</p>
+            <p class="footer__contacto-parrafos">Localizacion: direccion 555</p>
         </div>
         <div class="footer__navegacion">
           <h3 class="footer__navegacion-titulo">Navegacion</h3>
-          <a class="footer__navegacion-anchor" href="fertilizantes.html">Fertilizantes</a>
-          <a class="footer__navegacion-anchor" href="sustratos.html">Sustratos</a>
-          <a class="footer__navegacion-anchor" href="semillas.html">Semillas</a>
-          <a class="footer__navegacion-anchor" href="productos.html">Productos</a>
-          <a class="footer__navegacion-anchor" href="index.html">Inicio</a>
-          <a class="footer__navegacion-anchor" href="contacto.html">Contacto</a>
+            <a class="footer__navegacion-anchor" href="fertilizantes.html">Fertilizantes</a>
+            <a class="footer__navegacion-anchor" href="sustratos.html">Sustratos</a>
+            <a class="footer__navegacion-anchor" href="semillas.html">Semillas</a>
+            <a class="footer__navegacion-anchor" href="productos.html">Productos</a>
+            <a class="footer__navegacion-anchor" href="index.html">Inicio</a>
+            <a class="footer__navegacion-anchor" href="contacto.html">Contacto</a>
         </div>
         <div class="footer__redes">
           <h3 class="footer__redes-titulo">Seguinos en:</h3>
@@ -96,7 +179,6 @@
       </footer>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
 </body>
 </html>
