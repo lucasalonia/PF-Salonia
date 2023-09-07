@@ -61,6 +61,7 @@ img.navbar__logo {
     margin-bottom: 10%;
    
 }
+
 header nav.navbar {
     background-image: map-get($fondos, fondo-nav-bar );
     font-size:large;
@@ -83,6 +84,10 @@ div.drop-down-custom {
 a.anchor-custom {
     font-weight: bold;
     color: map-get($anchor-color, link );
+}
+button.fondo-busqueda  {
+    background-image: radial-gradient( ellipse at center,rgb(219, 196, 217), #a0428b);
+    border: map-get($border-colors, border-nav) 1px;
 }
 /*END Configuracion*/
 /*END HEADER*/
@@ -649,7 +654,6 @@ footer.footer {
     flex-direction: column;
     @include desktop-section {
         font-family:'Oswald', sans-serif;
-        background-color: #3c4336;
         display: grid;
         grid-template-areas: 
         "contacto redes navegacion"

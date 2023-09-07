@@ -78,6 +78,11 @@ a.anchor-custom {
   color: #55aa55;
 }
 
+button.fondo-busqueda {
+  background-image: radial-gradient(ellipse at center, rgb(219, 196, 217), #a0428b);
+  border: solid rgb(80, 158, 80) 1px;
+}
+
 /*END Configuracion*/
 /*END HEADER*/
 /*INDEX*/
@@ -640,7 +645,6 @@ footer.footer {
 @media screen and (min-width: 900px) {
   footer.footer {
     font-family: "Oswald", sans-serif;
-    background-color: #3c4336;
     display: grid;
     grid-template-areas: "contacto redes navegacion" "contacto redes navegacion" "copy copy copy";
     gap: 10px;
